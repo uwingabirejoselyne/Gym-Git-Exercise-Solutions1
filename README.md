@@ -236,11 +236,44 @@ Date:   Tue Jul 11 11:19:20 2023 +0200
 Uwing@DESKTOP-DHVDNUL MINGW64 /d/The gym/Gym-Git-Exercise-Solutions1 (dev)
 $ git reset -- hard commit cf5d4d0d3808cef721f84a812da8e99641ce5666
 
+
 ```
 # Git exercise
 # bundle 02
 # exercise 01
 ```bash
 
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout -b 'ft/bundle-2'
+Switched to a new branch 'ft/bundle-2'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+$ touch services.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+$ git commit -m 'adding service page'
+[ft/bundle-2 081f2bb] adding service page
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 667 bytes | 667.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/bundle-2
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
 
 ```
