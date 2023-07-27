@@ -277,3 +277,147 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
 
 ```
+
+# Git exercise
+# bundle 02
+# exercise 02
+
+
+```bash
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (dev)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout ft/bundle-2 
+Switched to branch 'ft/bundle-2'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+$ git chekout main
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.39 KiB | 26.00 KiB/s, done.
+From https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1
+   c8c1cc2..f95e3d8  main       -> origin/main
+Updating c8c1cc2..f95e3d8
+Fast-forward
+ about.html    | 11 +++++++++++
+ services.html |  5 +----
+ 2 files changed, 12 insertions(+), 4 deletions(-)
+ create mode 100644 about.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout -b 'ft/service-redesign'
+Switched to a new branch 'ft/service-redesign'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git commit -m 'Making some change on service page using ft/service-redesign branch '
+[ft/service-redesign 7d91ac0] Making some change on service page using ft/service-redesign branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 410 bytes | 410.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/service-redesign  
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+
+ User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git add services.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git commit -m 'Making some change on service page using main branch '
+[main a4cd4e1] Making some change on service page using main branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 573 bytes | 573.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   f95e3d8..a4cd4e1  main -> main
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout  'ft/service-redesign'
+Switched to branch 'ft/service-redesign'
+M       README.md
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git diff main
+diff --git a/README.md b/README.md
+index ecf890f..5ee9168 100644
+--- a/README.md
++++ b/README.md
+@@ -276,4 +276,76 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+
+ User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/bundle-2)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign|MERGING)     
+$ git add services.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign|MERGING)     
+$ git commit -m 'solving conflict '
+[ft/service-redesign df06311] solving conflict
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git merge main
+Already up to date.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 395 bytes | 395.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   7d91ac0..df06311  ft/service-redesign -> ft/service-redesign
+
+
+```
