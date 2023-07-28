@@ -426,6 +426,7 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
 
 ```bash
 
+
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
 $ git checkout -b 'ft/team-page'
 Switched to a new branch 'ft/team-page'
@@ -541,5 +542,92 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
    e15930d..58159d0  ft/contact-page -> ft/contact-page
 
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git checkout -b 'ft/faq-page'
+Switched to a new branch 'ft/faq-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ touch faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git add faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git push origin ft/faq-page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/faq-page      
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+A       faq.html
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+M       README.md
+A       faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git add faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git commit -m 'Saving faq page'
+[ft/faq-page 2207c30] Saving faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 440 bytes | 440.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   58159d0..2207c30  ft/faq-page -> ft/faq-page
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+M       README.md
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git log
+commit 1a6a3d06a5201e8e208559df88573677fbf4c464 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Joselyne uwingabire <uwingajoselyne@gmail.com>
+Date:   Fri Jul 28 10:51:14 2023 +0200
+# On branch ft/team-page
+
+    Creation of Team page
+
+commit 27f5e57ceeaa9403b644e427f5c35169c5420b07 (origin/main, origin/HEAD, main)
+Author: Joselyne uwingabire <uwingajoselyne@gmail.com>
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git revert 1a6a3d06a5201e8e208559df88573677fbf4c464
+[ft/team-page 1c61c2c] Revert "Creation of Team page"
+ 1 file changed, 11 deletions(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 289 bytes | 289.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   1a6a3d0..1c61c2c  ft/team-page -> ft/team-page
 
 ```
