@@ -427,6 +427,7 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
 ```bash
 
 
+<<<<<<< HEAD
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
 $ git checkout -b 'ft/team-page'
 Switched to a new branch 'ft/team-page'
@@ -630,6 +631,8 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
    1a6a3d0..1c61c2c  ft/team-page -> ft/team-page
 
+=======
+>>>>>>> a9499b97560b9af186caeabaef424d72b960175e
 ```
 
 
