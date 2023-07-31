@@ -631,3 +631,44 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
    1a6a3d0..1c61c2c  ft/team-page -> ft/team-page
 
 ```
+
+
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git checkout -b 'ft/home-page-redesign'
+Switched to a new branch 'ft/home-page-redesign'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git add index.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git commit -m 'Adding paragraph on main branch'
+[main 0f3f1f9] Adding paragraph on main branch
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 615 bytes | 615.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   bbbc1dc..0f3f1f9  main -> main
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout ft/home-page-redesign 
+Switched to branch 'ft/home-page-redesign'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
