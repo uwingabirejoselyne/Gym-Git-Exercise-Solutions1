@@ -418,48 +418,162 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
    7d91ac0..df06311  ft/service-redesign -> ft/service-redesign
-
-
 ```
 
+# Git exercise
+# bundle 03
+# exercise 01
+
+```bash
 
 
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
-$ git checkout ft/faq-page
-Switched to branch 'ft/faq-page'
+$ git checkout -b 'ft/team-page'
+Switched to a new branch 'ft/team-page'
 
-User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
-$ git checkout -b 'ft/home-page-redesign'
-Switched to a new branch 'ft/home-page-redesign'
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ touch team.html
 
-User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git add team.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git commit -m 'Creation of Team page'
+[ft/team-page 1a6a3d0] Creation of Team page
+ 1 file changed, 11 insertions(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 431 bytes | 431.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/team-page     
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
 $ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
-$ git add index.html
+$ git checkout -b 'ft/contact-page'
+Switched to a new branch 'ft/contact-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
-$ git commit -m 'Adding paragraph on main branch'
-[main 0f3f1f9] Adding paragraph on main branch
- 1 file changed, 1 insertion(+)
+$ git checkout ft/team-page 
+Switched to branch 'ft/team-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git log
+commit 1a6a3d06a5201e8e208559df88573677fbf4c464 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Joselyne uwingabire <uwingajoselyne@gmail.com>
+Date:   Fri Jul 28 10:51:14 2023 +0200
+
+    Creation of Team page
+
+commit 27f5e57ceeaa9403b644e427f5c35169c5420b07 (origin/main, origin/HEAD, main, ft/contact-page)        
+Author: Joselyne uwingabire <uwingajoselyne@gmail.com>
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
-$ git push
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git cherry-pick 1a6a3d06a5201e8e208559df88573677fbf4c464
+[ft/contact-page e15930d] Creation of Team page
+ Date: Fri Jul 28 10:51:14 2023 +0200
+ 1 file changed, 11 insertions(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git push origin ft/contact-page
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 12 threads
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 615 bytes | 615.00 KiB/s, done.
+Writing objects: 100% (3/3), 436 bytes | 436.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/contact-page  
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ touch contact.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git add contact.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git commit -m 'Creation of contact page'
+[ft/contact-page 58159d0] Creation of contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git push origin 'ft/contact-page'
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 452 bytes | 452.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
-   bbbc1dc..0f3f1f9  main -> main
+   e15930d..58159d0  ft/contact-page -> ft/contact-page
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/contact-page)
+$ git checkout -b 'ft/faq-page'
+Switched to a new branch 'ft/faq-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ touch faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git add faq.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git push origin ft/faq-page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/faq-page      
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+A       faq.html
+Your branch is up to date with 'origin/main'.
 
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
-$ git checkout ft/home-page-redesign 
-Switched to branch 'ft/home-page-redesign'
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+M       README.md
+A       faq.html
 
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
 $ git add faq.html
@@ -516,4 +630,93 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
    1a6a3d0..1c61c2c  ft/team-page -> ft/team-page
 
+```
+# Git exercise
+# bundle 03
+# exercise 02
+```bash
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/faq-page)
+$ git checkout -b 'ft/home-page-redesign'
+Switched to a new branch 'ft/home-page-redesign'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git add index.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git commit -m 'Adding paragraph on main branch'
+[main 0f3f1f9] Adding paragraph on main branch
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 615 bytes | 615.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   bbbc1dc..0f3f1f9  main -> main
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
+$ git checkout ft/home-page-redesign 
+Switched to branch 'ft/home-page-redesign'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+$ git commit -m 'saving readme'
+[ft/home-page-redesign f28e962] saving readme
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   f676f10..f28e962  ft/home-page-redesign -> ft/home-page-redesign
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign)
+$ git rebase main
+dropping e15930d3e29e24216eec62698813324c602abaed Creation of Team page -- patch contents already upstream
+dropping 58159d0806c9182862b764182d34786bca64c569 Creation of contact page -- patch contents already upstream
+dropping 2207c30612b4d781f8c3b4a4fd21201fca00c80f Saving faq page -- patch contents already upstream
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: could not apply a9499b9... changes
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply a9499b9... changes
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git commit -m 'saving readme'
+[detached HEAD a9427e7] saving readme
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git push origin ft/home-page-redesign
+Everything up-to-date
 ```
