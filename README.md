@@ -634,6 +634,7 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
 # Git exercise
 # bundle 03
 # exercise 02
+
 ```bash
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (main)
 $ git checkout ft/faq-page
@@ -719,4 +720,48 @@ $ git commit -m 'saving readme'
 User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
 $ git push origin ft/home-page-redesign
 Everything up-to-date
+```
+# Git exercise
+# bundle 04
+# exercise 01
+```bash
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git remote add git-copy https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1Copy.git
+
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git commit -m 'Change home page'
+[main 6a913cb] Change home page
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 442 bytes | 442.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+   6372384..6a913cb  main -> main
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 9/10)
+$ git push git-copy main
+Enumerating objects: 124, done.
+Counting objects: 100% (124/124), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (120/120), done.
+Writing objects: 100% (124/124), 19.52 KiB | 1.30 MiB/s, done.
+Total 124 (delta 66), reused 13 (delta 3), pack-reused 0
+remote: Resolving deltas: 100% (66/66), done.
 ```
