@@ -765,3 +765,102 @@ Writing objects: 100% (124/124), 19.52 KiB | 1.30 MiB/s, done.
 Total 124 (delta 66), reused 13 (delta 3), pack-reused 0
 remote: Resolving deltas: 100% (66/66), done.
 ```
+
+# Git exercise
+# bundle 04
+# exercise 02
+
+```bash
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git commit -m 'Creating footer section'
+[ft/footer f794332] Creating footer section
+ 1 file changed, 4 insertions(+)
+
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git commit -m 'Adding paragraph to the footer'
+[ft/footer cc5ac46] Adding paragraph to the footer
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git push origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 761 bytes | 761.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/footer
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/footer -> ft/footer
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git checkout -b 'ft/squashing'
+Switched to a new branch 'ft/squashing'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git merge --squash ft/footer
+Updating d170d99..cc5ac46
+Fast-forward
+Squash commit -- not updating HEAD
+ index.html | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git commit -m "footer changes squashing"
+[ft/squashing fead992] footer changes squashing1~
+ 1 file changed, 5 insertions(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git add .
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git commit -m "footer changes squashing"
+[ft/squashing 07c7228] footer changes squashing
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git push origin ft/footer
+Everything up-to-date
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/Gym-Git-Exercise-Solutions1 (ft/home-page-redesign|REBASE 10/10)
+$ git push origin  ft/squashing
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 785 bytes | 785.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1/pull/new/ft/squashing
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+```
