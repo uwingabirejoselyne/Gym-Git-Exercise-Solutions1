@@ -864,3 +864,37 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions1.git
  * [new branch]      ft/squashing -> ft/squashing
 
 ```
+# Git exercise
+# bundle 05
+# exercise 01
+```bash
+https://uwingabirejoselyne.github.io/Gym-Git-Exercise-Solutions1/
+```
+
+# Git exercise
+# bundle 05
+# exercise 02
+```bash
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git add index.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git commit -m 'Editing index Page'
+[main 3a3d013] Editing index Page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0        
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+   4873d22..3a3d013  main -> main
+
+
+```
