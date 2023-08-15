@@ -935,8 +935,34 @@ To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
 # bundle 06
 # exercise 02
 ```bash
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (feature)
+$ git  checkout -b bug_fix
+Switched to a new branch 'bug_fix'
 
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (bug_fix)
+$ git add .
 
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (bug_fix)
+$ git commit -m 'Fixing bug on bundle 6 exercise 2'
+[bug_fix da00e4a] Fixing bug on bundle 6 exercise 2 
+ 1 file changed, 203 insertions(+), 203 deletions(-)
+ rename index-4.html => contact.html (97%)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (bug_fix)
+$ git push origin bug_fix
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.51 KiB | 1.25 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug_fix' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/git-cafe-exercise/pull/new/bug_fix
+remote:
+To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+ * [new branch]      bug_fix -> bug_fix
 ```
 
 # Git exercise
@@ -944,7 +970,25 @@ To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
 # exercise 03
 ```bash
 
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (bug_fix)
+$ git add .
 
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (bug_fix)
+$ git commit -m 'making small hotfix on the contact page'
+[bug_fix a2d3875] making small hotfix on the contact page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (bug_fix)
+$ git push origin bug_fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0        
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+   da00e4a..a2d3875  bug_fix -> bug_fix
 ```
 # Git exercise
 # bundle 06
