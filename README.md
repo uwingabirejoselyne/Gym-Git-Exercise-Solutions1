@@ -898,3 +898,58 @@ To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
 
 
 ```
+# Git exercise
+# bundle 06
+# exercise 01
+```bash
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git checkout -b feature 
+Switched to a new branch 'feature'
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (feature)
+$ touch menu.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (feature)
+$ git add menu.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (feature)
+$ git commit -m 'Creating menu page'
+[feature c61ed45] Creating menu page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 menu.html
+
+User@DESKTOP-Q9JB4D6 MINGW64 ~/Desktop/The Gym/git-cafe-exercise (feature)
+$ git push origin feature
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 737 bytes | 368.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0        
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+   4cf4815..a6e5e47  feature -> feature
+   
+```
+# Git exercise
+# bundle 06
+# exercise 02
+```bash
+
+
+```
+
+# Git exercise
+# bundle 06
+# exercise 03
+```bash
+
+
+```
+# Git exercise
+# bundle 06
+# exercise 04
+```bash
+
+
+```
